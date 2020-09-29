@@ -1,0 +1,1 @@
+tutorial link - https://coderecode.com/download-files-scrapy/

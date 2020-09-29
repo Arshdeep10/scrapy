@@ -8,5 +8,5 @@ import scrapy
 
 class HowjsayItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    files = scrapy.Field()
+    file_urls = scrapy.Field()

@@ -11,7 +11,9 @@ BOT_NAME = 'howjsay'
 
 SPIDER_MODULES = ['howjsay.spiders']
 NEWSPIDER_MODULE = 'howjsay.spiders'
+# ITEM_PIPELINES = {'scrapy.pipelines.files.FilesPipeline': 1}       #for defalut
 
+FILES_STORE = 'C:/Users/ARSHDEEP SINGH/Desktop/scrapy/howjsay/bwords'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'howjsay (+http://www.yourdomain.com)'
@@ -62,9 +64,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'howjsay.pipelines.HowjsayPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'howjsay.pipelines.HowjsayPipeline': 1,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
